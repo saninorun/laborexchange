@@ -8,5 +8,6 @@ services:
       - ./data:/var/lib/postgresql/data
     environment:
       POSTGRESS_USER: root
-      POSTGRESS_PASSWORD: postgres_password
+      POSTGRESS_PASSWORD: root
       POSTGRESS_DB: employment_exchange
+      POSTGRES_HOST_AUTH_METHOD: trust
