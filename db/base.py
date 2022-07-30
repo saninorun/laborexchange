@@ -1,7 +1,7 @@
 from databases import Database
 from sqlalchemy import create_engine, MetaData
-from core.config import DATABASE_URL
+#from core.config import DATABASE_URL
 
-database = Database(DATABASE_URL)
+database = Database("postgresql://root:root@localhost:32700/employment_exchange")
 metadata = MetaData()
-engine = create_engine(DATABASE_URL,)
+engine = create_engine("postgresql://root:root@localhost:32700/employment_exchange")
