@@ -1,2 +1,10 @@
 __pycache__
 venv
+Scripts
+Lib
+Data
+share
+Include
+laborexchange*.7z
+pyvenv.cfg
+ddd.py
