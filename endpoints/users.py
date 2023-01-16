@@ -27,5 +27,5 @@ async def user_update(
     current_user: User = Depends(get_current_user)):
     old_user = await users.get_by_id(id=id)
     if old_user is None or old_user.email != current_user:
-        return HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
     return await users.update(id=id, u=user)
